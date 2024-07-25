@@ -553,7 +553,7 @@ function init() {
 			displaySliderMovies();
 			displayPopularMovies();
 			break;
-		case '/shows/':
+		case '/shows':
 		case '/shows.html':
 			displaySliderShows();
 			displayPopularShows();
