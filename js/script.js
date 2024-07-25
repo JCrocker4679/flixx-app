@@ -206,6 +206,7 @@ async function displayPopularMovies() {
 
 async function displayPopularShows() {
 	const { results } = await fetchAPIData('tv/popular');
+	console.log(results);
 	results.forEach((show) => {
 		const div = document.createElement('div');
 		div.classList.add('card');
@@ -271,6 +272,7 @@ async function displaySliderMovies() {
 
 async function displaySliderShows() {
 	const { results } = await fetchAPIData('trending/tv/week');
+	console.log(results);
 	results.forEach((show) => {
 		const div = document.createElement('div');
 		div.classList.add('swiper-slide');
